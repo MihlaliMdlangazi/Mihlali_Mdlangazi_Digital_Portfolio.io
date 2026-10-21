@@ -4,6 +4,16 @@
 This logbook captures daily operational execution, Agile ceremonies (retrospectives), stakeholder collaboration notes, and continuous learning milestones throughout the Industry Placement at **Speak2Inspire**.
 
 ---
+## 🔗 Live Evidence & Artifacts
+* **Live Website:** [Speak2Inspire Official Website](https://speak2inspire.co.za/)
+* **Key Updated Pages:**
+  - Front Page & Hero Section
+  - Programme Details Page
+  - Testimonials Page ("Real People, Real Results")
+  - Payment Integration / Button
+* **Multimedia Evidence:** Canva promotional videos and daily social media assets.
+
+---
 
 ## 1. Daily Operations & Ceremony Log
 * **Daily Stand-ups (Self-Alignment):** Reviewed pending employer requests each morning, prioritizing urgent WordPress updates, social media posts, and graphic asset production.
