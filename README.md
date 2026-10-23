@@ -13,11 +13,11 @@
 
 | Document | Description | Direct Link |
 | :--- | :--- | :--- |
-| **01. Agile Team Charter** | Team vision, working agreements, roles, and communication rules at the placement company[cite: 1]. | [View Charter](./docs/01-agile-team-charter.md) |
-| **02. User Stories & Tasks** | Detailed user stories, acceptance criteria, and task breakdowns for company projects[cite: 1]. | [View Stories](./docs/02-user-stories-and-tasks.md) |
-| **03. Product Backlog** | Master backlog prioritized using MoSCoW methodology[cite: 1]. | [View Product Backlog](./docs/03-product-backlog.md) |
-| **04. Sprint Backlog** | Dedicated sprint tasks, estimations, and execution tracking[cite: 1]. | [View Sprint Backlog](./docs/04-sprint-backlog.md) |
-| **05. Agile Logbook** | Sprint retrospectives, ceremony evidence, and continuous learning notes[cite: 1]. | [View Logbook](./docs/05-agile-logbook.md) |
+| **01. Agile Team Charter** | Team vision, working agreements, roles, and communication rules at the placement company. | [View Charter](./docs/01-agile-team-charter.md) |
+| **02. User Stories & Tasks** | Detailed user stories, acceptance criteria, and task breakdowns for company projects. | [View Stories](./docs/02-user-stories-and-tasks.md) |
+| **03. Product Backlog** | Master backlog prioritized using MoSCoW methodology | [View Product Backlog](./docs/03-product-backlog.md) |
+| **04. Sprint Backlog** | Dedicated sprint tasks, estimations, and execution tracking. | [View Sprint Backlog](./docs/04-sprint-backlog.md) |
+| **05. Agile Logbook** | Sprint retrospectives, ceremony evidence, and continuous learning notes. | [View Logbook](./docs/05-agile-logbook.md) |
 
 ---
 
