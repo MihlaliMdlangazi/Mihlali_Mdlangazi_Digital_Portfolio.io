@@ -2,7 +2,7 @@
 <h3 align="center">Software Developer | Industry Placement Trainee | ICT Applications Development</h3>
 
 <p align="center">
-  <a href="https://MihlaliMdlangazi.github.io">
+  <a href="https://mihlalimdlangazi.github.io/Mihlali_Mdlangazi_Digital_Portfolio.io/">
     <img src="https://img.shields.io/badge/✨_Portfolio-Explore_Me!-FF69B4?style=for-the-badge&logo=github&logoColor=white&color=ff69b4" alt="Portfolio"/>
   </a>
   &nbsp;&nbsp;&nbsp;
