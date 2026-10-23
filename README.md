@@ -20,8 +20,8 @@
 | **05. Agile Logbook** | Sprint retrospectives, ceremony evidence, and continuous learning notes. | [View Logbook](./docs/05-agile-logbook.md) |
 
 #### 🔗 Live Industry Placement Evidence & Artifacts
-* **Live Website:** [Speak2Inspire Official Website](https://speak2inspire.co.za/)
-* **Key Features & Updates Deployed:**
+- **Live Website:** [Speak2Inspire Official Website](https://speak2inspire.co.za/)
+- **Key Features & Updates Deployed:**
   - **Front Page & Footer:** Modernized hero sections, layouts, navigation, and brand alignment.
   - **Programme Details Page:** Dedicated layout providing clear visibility for prospective participants.
   - **Payment Integration:** Embedded functional payment buttons to streamline user sign-ups.
@@ -76,7 +76,7 @@ I have completed the **CAPACITI AI Skills Acceleration Programme** (including th
 - Emerging AI Technologies & Trends
 
 **Verified Coursera Certificates**
-* **Google AI Essentials & Related Certifications:** [View Verified Certificates Folder](./CourseraCertificates/)
+- **Google AI Essentials & Related Certifications:** [View Verified Certificates Folder](./CourseraCertificates/)
 
 **Additional Certifications**
 - *Python for Data Science, AI & Development* — IBM
@@ -90,11 +90,13 @@ I have completed the **CAPACITI AI Skills Acceleration Programme** (including th
 
 - **[AnimeStore](https://github.com/MihlaliMdlangazi/AnimeStore)** — *Capstone Project (Team of 5)*
   * **Role:** Full-Stack Developer
-  * E-commerce platform built as a final-year capstone project. Managed back-end logic and front-end interface implementation using clean engineering practices.
+  * **What it is & does:** A full-stack e-commerce application serving as a centralized digital marketplace for anime enthusiasts to browse, search, and purchase specialized merchandise, apparel, and collectibles with secure cart and checkout workflows.
+  * **Community Benefit:** Serves the growing local anime and pop-culture community by providing a tailored, secure, and accessible platform that brings together niche items previously fragmented across external vendors.
 
-- **[UniTrade](https://github.com/MihlaliMdlangazi/UniTrade)** — *Student Marketplace Platform*
+- **[UniTrade](https://github.com/MihlaliMdlangazi/UniTrade)** — *Student Marketplace Platform(Team of 5)*
   * **Role:** Front-End Developer
-  * Student trading platform interface focusing on dashboard subsystem work, wireframing, and systemic reporting with non-breaking additive updates.
+  * **What it is & does:** An interactive web-based student marketplace where tertiary students can buy, sell, or trade essential academic resources (textbooks, study notes, electronics) within a trusted peer network.
+  * **Community Benefit:** Eases financial burdens on students through affordable local resource exchange while promoting campus sustainability and peer trust.
 
 - **TN Mentor by TechNova** — *Solo Project*
   * **Role:** Solo Developer / Designer
