@@ -9,7 +9,7 @@
 
 ---
 
-### 📂: GitHub Portfolio (Industry Placement)
+### 📂: GitHub Portfolio (Industry Placement: Speak2Inspire)
 
 | Document | Description | Direct Link |
 | :--- | :--- | :--- |
@@ -18,6 +18,16 @@
 | **03. Product Backlog** | Master backlog prioritized using MoSCoW methodology | [View Product Backlog](./docs/03-product-backlog.md) |
 | **04. Sprint Backlog** | Dedicated sprint tasks, estimations, and execution tracking. | [View Sprint Backlog](./docs/04-sprint-backlog.md) |
 | **05. Agile Logbook** | Sprint retrospectives, ceremony evidence, and continuous learning notes. | [View Logbook](./docs/05-agile-logbook.md) |
+
+#### 🔗 Live Industry Placement Evidence & Artifacts
+* **Live Website:** [Speak2Inspire Official Website](https://speak2inspire.co.za/)
+* **Key Features & Updates Deployed:**
+  - **Front Page & Footer:** Modernized hero sections, layouts, navigation, and brand alignment.
+  - **Programme Details Page:** Dedicated layout providing clear visibility for prospective participants.
+  - **Payment Integration:** Embedded functional payment buttons to streamline user sign-ups.
+  - **Testimonials ("Real People, Real Results"):** Built dedicated social proof page to build trust and authenticity.
+  - **FAQs Section:** Structured accordion/answers addressing common user inquiries.
+  - **Multimedia & Socials:** Custom promotional video assets designed via Canva and daily social media management.
 
 ---
 
@@ -65,6 +75,9 @@ I have completed the **CAPACITI AI Skills Acceleration Programme** (including th
 - Responsible AI & Ethics
 - Emerging AI Technologies & Trends
 
+**Verified Coursera Certificates**
+* **Google AI Essentials & Related Certifications:** [View Verified Certificates Folder](./CourseraCertificates/)
+
 **Additional Certifications**
 - *Python for Data Science, AI & Development* — IBM
 - *Introduction to Artificial Intelligence (AI)* — IBM
@@ -75,23 +88,23 @@ I have completed the **CAPACITI AI Skills Acceleration Programme** (including th
 
 ### 🚀 Projects
 
-* **[AnimeStore](https://github.com/MihlaliMdlangazi/AnimeStore)** — *Capstone Project (Team of 5)*
+- **[AnimeStore](https://github.com/MihlaliMdlangazi/AnimeStore)** — *Capstone Project (Team of 5)*
   * **Role:** Full-Stack Developer
   * E-commerce platform built as a final-year capstone project. Managed back-end logic and front-end interface implementation using clean engineering practices.
 
-* **[UniTrade](https://github.com/MihlaliMdlangazi/UniTrade)** — *Student Marketplace Platform*
+- **[UniTrade](https://github.com/MihlaliMdlangazi/UniTrade)** — *Student Marketplace Platform*
   * **Role:** Front-End Developer
   * Student trading platform interface focusing on dashboard subsystem work, wireframing, and systemic reporting with non-breaking additive updates.
 
-* **TN Mentor by TechNova** — *Solo Project*
+- **TN Mentor by TechNova** — *Solo Project*
   * **Role:** Solo Developer / Designer
   * Educational AI companion designed to teach tech concepts (Python, APIs, databases, prompt engineering) using interactive conversational memory.
 
-* **[Tech Nova](https://github.com/MihlaliMdlangazi/AI-ChatBot-technova-companion)** — *AI Support Chatbot*
+- **[Tech Nova](https://github.com/MihlaliMdlangazi/AI-ChatBot-technova-companion)** — *AI Support Chatbot*
   * **Role:** UI/UX Designer
   * Designed end-to-end interface ergonomics, layout structure, color schemes, and typography for a smart-home customer support companion.
 
-* **[AI Workplace Productivity Assistant](https://github.com/MihlaliMdlangazi/AI-Productivity-Assitant)** — *Solo Project*
+- **[AI Workplace Productivity Assistant](https://github.com/MihlaliMdlangazi/AI-Productivity-Assitant)** — *Solo Project*
   * **Role:** Solo Developer
   * Automated productivity assistant offering tone-adjusted email generation, automated task planning, and on-demand query handling. ([Live Demo](https://mihlali-ai-assistant-app.lovable.app/))
 
