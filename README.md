@@ -119,8 +119,6 @@ I aim to bridge robust software engineering with applied AI, engineering scalabl
 ### 📫 Contact & Connections
 
 <p align="left">
-  <a href="https://MihlaliMdlangazi.github.io">🌐 Digital Portfolio</a> •
-  <a href="https://mihlali-portfolio-sparkle.lovable.app">✨ Interactive Portfolio</a> •
   <a href="https://www.linkedin.com/in/mihlali-mdlangazi-94075b234">💼 LinkedIn</a> •
   <a href="mailto:mihlalimdlangazi@gmail.com">✉️ Email</a>
 </p>
