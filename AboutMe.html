@@ -3,38 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mihlali Mdlangazi | Portfolio & Profile</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Mihlali Mdlangazi | Digital Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
         :root {
             --bg-color: #0f172a;
             --card-bg: #1e293b;
+            --card-border: #334155;
+            --accent-purple: #8b5cf6;
+            --accent-pink: #ec4899;
+            --accent-blue: #3b82f6;
+            --accent-green: #10b981;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
-            --accent: #38bdf8;
-            --accent-glow: rgba(56, 189, 248, 0.15);
-            --border: #334155;
         }
 
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-main);
-            line-height: 1.6;
             padding: 2rem 1rem;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
         }
 
         .container {
-            max-width: 1000px;
-            margin: 0 auto;
+            max-width: 1200px;
+            width: 100%;
         }
 
+        /* Hero Header */
         header {
             text-align: center;
             margin-bottom: 2.5rem;
@@ -42,203 +51,359 @@
 
         header h1 {
             font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(to right, #38bdf8, #818cf8);
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
         }
 
         header p {
             color: var(--text-muted);
             font-size: 1.1rem;
+            margin-bottom: 1.5rem;
         }
 
-        .social-links {
-            margin-top: 1rem;
+        .btn-group {
             display: flex;
+            gap: 0.75rem;
             justify-content: center;
-            gap: 1rem;
+            flex-wrap: wrap;
         }
 
-        .social-links a {
-            color: var(--text-main);
-            background: var(--card-bg);
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
+        .btn {
             text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 9999px;
+            font-weight: 600;
             font-size: 0.9rem;
-            border: 1px solid var(--border);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
             transition: all 0.3s ease;
+            color: white;
         }
 
-        .social-links a:hover {
-            border-color: var(--accent);
-            background: var(--accent-glow);
+        .btn-purple { background-color: #6d28d9; }
+        .btn-pink { background-color: #db2777; }
+        .btn-blue { background-color: #2563eb; }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
         }
 
-        /* Bento Grid Layout */
+        /* Bento Grid */
         .bento-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 1.5rem;
         }
 
         .card {
             background-color: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 1.8rem;
-            transition: transform 0.3s ease, border-color 0.3s ease;
+            border: 1px solid var(--card-border);
+            border-radius: 1.25rem;
+            padding: 1.75rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .card:hover {
-            transform: translateY(-4px);
-            border-color: var(--accent);
+            border-color: var(--accent-purple);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
         }
 
-        .card.wide {
-            grid-column: span 2;
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
         }
 
-        @media (max-width: 768px) {
-            .card.wide {
-                grid-column: span 1;
-            }
+        .card-header i {
+            font-size: 1.5rem;
+            color: var(--accent-purple);
         }
 
         .card h2 {
             font-size: 1.3rem;
-            margin-bottom: 1rem;
-            color: var(--accent);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            font-weight: 700;
         }
 
         .card p {
             color: var(--text-muted);
-            margin-bottom: 1rem;
             font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
         }
 
-        .badge-list {
+        /* List Items */
+        .doc-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .doc-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 0.75rem;
+            border: 1px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .doc-item:hover {
+            border-color: var(--accent-purple);
+            background: rgba(139, 92, 246, 0.05);
+        }
+
+        .doc-item a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        /* Tags / Badges */
+        .tags {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
-            margin-top: 1rem;
+            margin-top: 0.5rem;
         }
 
-        .badge {
-            background: rgba(56, 189, 248, 0.1);
-            color: var(--accent);
-            padding: 0.3rem 0.8rem;
-            border-radius: 6px;
-            font-size: 0.85rem;
+        .tag {
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--text-main);
+            padding: 0.3rem 0.75rem;
+            border-radius: 0.5rem;
+            font-size: 0.8rem;
             font-weight: 500;
         }
 
-        .experience-item {
-            margin-bottom: 1.2rem;
+        .tag-accent {
+            background: rgba(139, 92, 246, 0.2);
+            color: #c084fc;
         }
 
-        .experience-item h3 {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--text-main);
+        /* Interactive Counter Script Banner */
+        .interactive-banner {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(236, 72, 153, 0.15));
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 1.25rem;
+            margin-top: 2rem;
         }
 
-        .experience-item span {
+        .stats-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .stat-item h3 {
+            font-size: 1.8rem;
+            color: var(--accent-pink);
+        }
+
+        .stat-item p {
             font-size: 0.85rem;
             color: var(--text-muted);
+            margin-bottom: 0;
         }
 
         footer {
             text-align: center;
             margin-top: 3rem;
             color: var(--text-muted);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .bento-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>Mihlali Mdlangazi</h1>
-            <p>ICT Applications Development Student | AI & Software Developer</p>
-            <div class="social-links">
-                <a href="https://github.com/MihlaliMdlangazi" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/mihlali-mdlangazi-94075b234" target="_blank">LinkedIn</a>
-                <a href="https://speak2inspire.co.za/" target="_blank">Speak2Inspire</a>
-            </div>
-        </header>
+<div class="container">
+    <!-- Header Section -->
+    <header>
+        <h1>Hi, I am Mihlali Mdlangazi 👋</h1>
+        <p>Software Developer | Industry Placement Trainee | ICT Applications Development</p>
+        
+        <div class="btn-group">
+            <a href="https://MihlaliMdlangazi.github.io" class="btn btn-purple"><i class="fa-brands fa-github"></i> Portfolio</a>
+            <a href="https://mihlali-portfolio-sparkle.lovable.app" class="btn btn-pink"><i class="fa-solid fa-wand-magic-sparkles"></i> Interactive Site</a>
+            <a href="https://www.linkedin.com/in/mihlali-mdlangazi-94075b234" class="btn btn-blue"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </header>
 
-        <div class="bento-grid">
-            <!-- About Me Card -->
-            <div class="card wide">
-                <h2>👋 About Me</h2>
-                <p>
-                    I am an Information and Communication Technology student specialising in Applications Development at Cape Peninsula University of Technology (CPUT), with a growing focus on applied artificial intelligence, data analytics, and digital solutions.
-                </p>
-                <p>
-                    Through my academic projects, CAPACITI AI Accelerator training, and website development work at Speak2Inspire, I build practical, scalable applications and explore how software and AI solve real-world challenges.
-                </p>
-            </div>
+    <!-- Bento Grid Layout -->
+    <div class="bento-grid">
 
-            <!-- Professional Experience -->
-            <div class="card">
-                <h2>💼 Experience</h2>
-                <div class="experience-item">
-                    <h3>Website & Digital Content Intern</h3>
-                    <span>Speak2Inspire • Sep 2026 – Present</span>
-                    <p style="margin-top: 0.4rem;">Managing WordPress/Elementor layouts, responsive design, and redesigning pages to match approved UI prototypes.</p>
+        <!-- Card 1: Placement Highlights -->
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h2>Industry Placement (Speak2Inspire)</h2>
                 </div>
-                <div class="experience-item">
-                    <h3>Digital Associate</h3>
-                    <span>CAPACITI AI Programme • July – Aug 2026</span>
-                    <p style="margin-top: 0.4rem;">Completed intensive AI bootcamp rotations (Frontend, Backend, PM) and independent Groq/API integrations.</p>
-                </div>
+                <p>Leading web development and digital content updates using WordPress & Elementor. Built Programme Details, Testimonials ("Real People, Real Results"), and payment integrations.</p>
             </div>
-
-            <!-- Core Technical Skills -->
-            <div class="card">
-                <h2>⚙️ Tech Stack</h2>
-                <p>Core programming, AI experimentation, and web tooling.</p>
-                <div class="badge-list">
-                    <span class="badge">Java</span>
-                    <span class="badge">Python</span>
-                    <span class="badge">Spring Boot</span>
-                    <span class="badge">JavaScript</span>
-                    <span class="badge">React</span>
-                    <span class="badge">Streamlit</span>
-                    <span class="badge">WordPress</span>
-                    <span class="badge">Git & GitHub</span>
-                    <span class="badge">SQL / PostgreSQL</span>
-                </div>
-            </div>
-
-            <!-- AI & Data Focus -->
-            <div class="card wide">
-                <h2>🤖 AI & Data Competencies</h2>
-                <p>
-                    Trained through CAPACITI and Google AI Essentials. Experienced in building sentiment analysis pipelines (using Hugging Face and Pandas), prompt engineering frameworks, and exploring conversational AI APIs (Groq & Gemini).
-                </p>
-                <div class="badge-list">
-                    <span class="badge">Generative AI</span>
-                    <span class="badge">Prompt Engineering</span>
-                    <span class="badge">Sentiment Analysis</span>
-                    <span class="badge">NLP Concepts</span>
-                    <span class="badge">Google AI Essentials</span>
-                </div>
+            <div class="tags">
+                <span class="tag tag-accent">WordPress</span>
+                <span class="tag tag-accent">Elementor</span>
+                <span class="tag tag-accent">Canva Video</span>
+                <span class="tag tag-accent">Social Media</span>
             </div>
         </div>
 
-        <footer>
-            <p>&copy; 2026 Mihlali Mdlangazi. Built for CPUT Industry Placement & Personal Portfolio.</p>
-        </footer>
+        <!-- Card 2: Agile Documentation -->
+        <div class="card" style="grid-row: span 2;">
+            <div>
+                <div class="card-header">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <h2>Agile Assessment Docs</h2>
+                </div>
+                <p>Complete CPUT Industry Placement Assessment 2 Agile artifacts:</p>
+                <ul class="doc-list">
+                    <li class="doc-item">
+                        <span>01. Agile Team Charter</span>
+                        <a href="./docs/01-agile-team-charter.md">View ➔</a>
+                    </li>
+                    <li class="doc-item">
+                        <span>02. User Stories & Tasks</span>
+                        <a href="./docs/02-user-stories-and-tasks.md">View ➔</a>
+                    </li>
+                    <li class="doc-item">
+                        <span>03. Product Backlog</span>
+                        <a href="./docs/03-product-backlog.md">View ➔</a>
+                    </li>
+                    <li class="doc-item">
+                        <span>04. Sprint Backlog</span>
+                        <a href="./docs/04-sprint-backlog.md">View ➔</a>
+                    </li>
+                    <li class="doc-item">
+                        <span>05. Agile Logbook</span>
+                        <a href="./docs/05-agile-logbook.md">View ➔</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin-top: 1.5rem;">
+                <a href="https://speak2inspire.co.za/" target="_blank" class="btn btn-purple" style="width: 100%; justify-content: center;">
+                    <i class="fa-solid fa-globe"></i> Visit Live Speak2Inspire
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 3: Technical Skills -->
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Tech Stack & Skills</h2>
+                </div>
+                <p>Engineering robust applications with modern tools and practices:</p>
+            </div>
+            <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Python</span>
+                <span class="tag">React</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML5/CSS3</span>
+                <span class="tag">Git</span>
+                <span class="tag">Agile/Scrum</span>
+            </div>
+        </div>
+
+        <!-- Card 4: Certifications -->
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <i class="fa-solid fa-certificate"></i>
+                    <h2>Certifications & AI Training</h2>
+                </div>
+                <p>Completed the CAPACITI AI Acceleration Programme, featuring hands-on prompt engineering and practical workplace productivity.</p>
+            </div>
+            <div style="margin-top: 1rem;">
+                <a href="./CourseraCertificates/" class="doc-item" style="text-decoration: none;">
+                    <span>📜 Coursera Verified Certificates</span>
+                    <span style="color: var(--accent-pink); font-weight: 600;">Browse Folder ➔</span>
+                </a>
+            </div>
+        </div>
+
     </div>
+
+    <!-- Interactive JS Stats Banner -->
+    <div class="interactive-banner">
+        <h2>Portfolio Activity Summary</h2>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3 id="doc-count">5</h3>
+                <p>Agile Docs</p>
+            </div>
+            <div class="stat-item">
+                <h3 id="project-count">5+</h3>
+                <p>Major Web Updates</p>
+            </div>
+            <div class="stat-item">
+                <h3 id="status-text">Active</h3>
+                <p>Placement Status</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Mihlali Mdlangazi • Built for CPUT Industry Placement Assessment 2</p>
+    </footer>
+</div>
+
+<!-- Simple JavaScript for Dynamic Hover Effects & Animation -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Animate stat counters on load
+        const docCount = document.getElementById('doc-count');
+        let current = 0;
+        const target = 5;
+        const timer = setInterval(() => {
+            if (current < target) {
+                current++;
+                docCount.textContent = current;
+            } else {
+                clearInterval(timer);
+            }
+        }, 150);
+
+        // Simple interactive card tilt effect
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transition = 'all 0.2s ease';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
-
