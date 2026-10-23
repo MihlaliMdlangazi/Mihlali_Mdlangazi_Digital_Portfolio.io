@@ -2,9 +2,13 @@
 <h3 align="center">Software Developer | Industry Placement Trainee | ICT Applications Development</h3>
 
 <p align="center">
-  <a href="https://MihlaliMdlangazi.github.io"><img src="https://img.shields.io/badge/Portfolio-Visit-6D28D9?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://mihlali-portfolio-sparkle.lovable.app"><img src="https://img.shields.io/badge/Lovable_Portfolio-Visit-FF6B9D?style=for-the-badge" alt="Lovable Portfolio"/></a>
-  <a href="https://www.linkedin.com/in/mihlali-mdlangazi-94075b234"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://MihlaliMdlangazi.github.io">
+    <img src="https://img.shields.io/badge/✨_Portfolio-Explore_Me!-FF69B4?style=for-the-badge&logo=github&logoColor=white&color=ff69b4" alt="Portfolio"/>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/mihlali-mdlangazi-94075b234">
+    <img src="https://img.shields.io/badge/💬_LinkedIn-Let's_Connect!-FF1493?style=for-the-badge&logo=linkedin&logoColor=white&color=ff1493" alt="LinkedIn"/>
+  </a>
 </p>
 
 ---
